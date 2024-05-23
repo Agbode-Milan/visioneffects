@@ -32,7 +32,73 @@
 
 
 </style>
-    
+<style>
+    .vision-effect {
+        color: #36c3b5; /* Turquoise Blue */
+    }
+</style>  
+
+
+<style>
+        .text-pretitle {
+            color: #36c3b5; /* Turquoise shade */
+        }
+    </style>
+
+<style>
+    .text-pretitle {
+        color: #36c3b5; /* Turquoise shade */
+    }
+</style>
+
+<style>
+    /* Container for masonry layout */
+    .bricks-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px; /* Adjust the gap between the images as needed */
+    }
+
+    /* Common style for all brick entries */
+    .brick {
+        flex: 1 1 calc(33.333% - 16px); /* Three columns on larger screens */
+        box-sizing: border-box;
+    }
+
+    /* Double size brick entries */
+    .brick--double {
+        flex: 2 1 calc(66.666% - 16px); /* Two columns on larger screens */
+    }
+
+    /* Make images responsive and consistent */
+    .entry__thumb img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure images cover the container without distortion */
+        max-height: 300px; /* Set a maximum height to maintain aspect ratio */
+    }
+
+    /* Ensure the layout is responsive */
+    @media (max-width: 1200px) {
+        .brick {
+            flex: 1 1 calc(50% - 16px); /* Two columns on medium screens */
+        }
+        .brick--double {
+            flex: 1 1 100%; /* Full width on medium screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .brick {
+            flex: 1 1 100%; /* Single column on small screens */
+        }
+        .brick--double {
+            flex: 1 1 100%; /* Full width on small screens */
+        }
+    }
+</style>
+
+
 </head>
 
 
@@ -60,8 +126,8 @@
                 <div class="s-header__block">
                     <div class="s-header__logo">
                         <a class="logo" href="index.html">
-                            <img src="images\vision-effects.jpg" alt="Homepage"> <br>
-                            <br><b><p>Vision Effects</p></b>
+                            <img src="images\vision_effects-canva-removebg-preview.png" alt="Homepage"> <br>
+                            <br><b><p class="vision-effect">Vision Effects</p></b>
                         </a>
                     </div>
 
@@ -300,13 +366,13 @@
                 <div id="bricks" class="row bricks">
                     <div class="column lg-12 masonry">
                         <div class="bricks-wrapper">
-
+            
                             <div class="grid-sizer"></div>
-
+            
                             <article class="brick brick--double entry">
                                 <a href="#modal-01" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\dyvsi-bodywash.jpg" alt="">
+                                        <img src="images/dyvsi-bodywash.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Product Design</div>
@@ -314,11 +380,11 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                             <article class="brick brick--double entry">
                                 <a href="#modal-02" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\Dyvsi-Cream.jpg" alt="">
+                                        <img src="images/Dyvsi-Cream.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Product Design</div>
@@ -326,11 +392,11 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                             <article class="brick entry">
                                 <a href="#modal-03" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\chocofarm-ghana-limited.jpg" alt="">
+                                        <img src="images/chocofarm-ghana-limited.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Logo Design</div>
@@ -338,11 +404,11 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                             <article class="brick entry">
                                 <a href="#modal-04" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\westbay-football-club.jpg" alt="">
+                                        <img src="images/westbay-football-club.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Product Design</div>
@@ -350,11 +416,11 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                             <article class="brick entry">
                                 <a href="#modal-05" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\Starlys.jpg" alt="">
+                                        <img src="images/Starlys.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Product Design</div>
@@ -362,11 +428,11 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                             <article class="brick entry">
                                 <a href="#modal-06" class="entry__link">
                                     <div class="entry__thumb">
-                                        <img src="images\Asantewaa's-Cold-Store.jpg" alt="">
+                                        <img src="images/Asantewaa's-Cold-Store.jpg" alt="">
                                     </div>
                                     <div class="entry__info">
                                         <div class="entry__cat">Logo Design</div>
@@ -374,10 +440,10 @@
                                     </div>
                                 </a>
                             </article> <!-- entry -->
-
+            
                         </div> <!-- end bricks-wrapper -->
                     </div> <!-- end masonry -->
-                </div> <!-- end bricks -->
+                </div>
 
 
                 <!-- modal templates popup
@@ -630,7 +696,7 @@
                     <h2 class="title text-display-1">
                     Have an idea or an epic project in mind? Talk to us. 
                     Let's work together and make something great. 
-                    Contact Us on <a href="mailto:#0" title="">visioneffectgh@gmail.com</a>
+                    Contact Us on <a href="mailto:#0" title=""><h4>visioneffectgh@gmail.com</h4></a>
                     </h2>
                 </div>    
                 <div class="column lg-6 stack-on-1100 section-header__secondary">
