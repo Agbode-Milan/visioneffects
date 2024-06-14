@@ -98,6 +98,80 @@
     }
 </style>
 
+<style>
+    .take-a-course {
+        padding: 80px 0;
+        background-color: #f8f8f8;
+    }
+
+    .section-heading {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .course-item {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+        height: 100%;
+    }
+
+    .course-item:hover {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .course-description {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .course-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        color: #999;
+        font-size: 14px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 5px 5px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+    }
+
+    .btn:hover {
+        background-color: #ffffff;
+    }
+
+    .btn-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+        .course-item {
+            margin-bottom: 30px;
+        }
+    }
+</style>
+
 
 </head>
 
@@ -630,44 +704,7 @@
                         </p>
                     </div> <!-- end s-testimonials__slide -->
 
-                    <div class="s-testimonials__slide swiper-slide">
-                        <div class="s-testimonials__author">
-                            <img src="images\headshot-silhouette.jpeg" alt="Author image" class="s-testimonials__avatar">
-                            <cite class="s-testimonials__cite">
-                                <strong>Andrew Danso</strong>
-                                <span>CEO of ...</span>
-                            </cite>
-                        </div>
-                        <p>
-                            This is blank text where reviews will go.
-                        </p>
-                    </div> <!-- end s-testimonials__slide -->
-
-                    <div class="s-testimonials__slide swiper-slide">
-                        <div class="s-testimonials__author">
-                            <img src="images\headshot-silhouette.jpeg" alt="Author image" class="s-testimonials__avatar">
-                            <cite class="s-testimonials__cite">
-                                <strong>John Agyei</strong>
-                                <span>Co-founder of ...</span>
-                            </cite>
-                        </div>
-                        <p>
-                            This is blank text where reviews will go
-                        </p>
-                    </div> <!-- end s-testimonials__slide -->
-
-                    <div class="s-testimonials__slide swiper-slide">
-                        <div class="s-testimonials__author">
-                            <img src="images\headshot-silhouette.jpeg" alt="Author image" class="s-testimonials__avatar">
-                            <cite class="s-testimonials__cite">
-                                <strong>Henry </strong>
-                                <span>CEO of ...</span>
-                            </cite>
-                        </div>
-                        <p>
-                            This is blank text where reviews will go
-                        </p>
-                    </div> <!-- end s-testimonials__slide -->
+                    
 
                 </div> <!-- end swiper-wrapper -->
 
@@ -679,6 +716,53 @@
     </div> <!-- end s-testimonials__content -->
 
 </section> <!-- end testimonials -->
+
+
+
+<!-- Take a Course -->
+<section id="take-a-course" class="take-a-course">
+    <div class="container">
+        <h2 class="section-heading">Take a Course With Vision Effects</h2>
+
+        <div class="row">
+            <div class="column lg-6">
+                <div class="course-item">
+                    <h3 class="course-title">Graphic Designing</h3>
+                    <p class="course-description">
+                        Learn the art of creating stunning visuals and captivating designs with our comprehensive Graphic Designing course. Taught by industry experts, this course covers the fundamentals of design principles, color theory, typography, and more. Gain hands-on experience with industry-standard software like Adobe Photoshop, Illustrator, and InDesign.
+                    </p>
+                    <div class="course-details">
+                        <span class="duration">Duration: 1 month</span>
+                        <span class="schedule">Schedule: Tue - Fri, 10 AM - 2 PM</span>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://forms.gle/PZLiVTd4qGJFdzGx9" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column lg-6">
+                <div class="course-item">
+                    <h3 class="course-title">Video Editing</h3>
+                    <p class="course-description">
+                        Master the art of storytelling through video with our comprehensive Video Editing course. Learn advanced techniques for editing, color grading, motion graphics, and visual effects using industry-leading software like Adobe Premiere Pro and After Effects. Gain practical experience in creating captivating videos for various platforms.
+                    </p>
+                    <div class="course-details">
+                        <span class="duration">Duration: 1 month</span>
+                        <span class="schedule">Schedule: Tue - Fri, 10 AM - 2 PM</span>
+                    </div>
+                    <div class="btn-container">
+                        <a href="https://forms.gle/PZLiVTd4qGJFdzGx9" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end container -->
+</section>
+<!-- End Take a Course -->
+
+
 
 
 
