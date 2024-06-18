@@ -3385,19 +3385,17 @@ img.u-pull-left {
 /* --------------------------------------------------------------------
  * ## intro background
  * -------------------------------------------------------------------- */
-.s-intro__bg {
+ .s-intro__bg {
     display             : block;
-    background-image    : url(../images/hero-bg.jpg);
+    background-image    : url(../images/unsplash-2.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
     height              : 100vh;
-    width               : calc(50% - 15vw);
+    width               : 100vw; /* Change to 100vw to cover the entire width */
     position            : absolute;
     top                 : 0;
-    right               : 0;
-    bottom              : 0;
-    left                : auto;
+    left                : 0; /* Change to 0 to cover from the left edge */
 }
 
 .s-intro__bg::before {
@@ -3430,10 +3428,11 @@ img.u-pull-left {
     opacity        : .3;
 }
 
+
 /* --------------------------------------------------------------------
  * ## intro content
  * -------------------------------------------------------------------- */
-.s-intro__content {
+ .s-intro__content {
     z-index        : 2;
     align-items    : flex-end;
     max-width      : 1400px;
@@ -3441,22 +3440,80 @@ img.u-pull-left {
     color          : white;
     padding-top    : var(--content-padding-top);
     padding-bottom : var(--content-padding-bottom);
+    padding-left   : 2rem;
+    padding-right  : 2rem;
     position       : relative;
+    box-sizing     : border-box;
 }
 
-.s-intro__content-bg {
+.s-intro__bg {
     display             : block;
-    background-image    : url(../images/intro-bg.jpg);
+    background-image    : url(../images/unsplash-6.jpg);
     background-repeat   : no-repeat;
     background-position : center;
     background-size     : cover;
-    width               : 500px;
+    height              : 100%;
+    width               : 100%;
     position            : absolute;
-    top                 : var(--content-padding-top);
-    right               : var(--gutter);
-    bottom              : var(--content-padding-bottom);
-    left                : auto;
+    top                 : 0;
+    left                : 0;
 }
+
+.s-intro__bg::before, .s-intro__bg::after {
+    display        : block;
+    content        : "";
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    bottom         : 0;
+    width          : 100%;
+    height         : 100%;
+}
+
+.s-intro__bg::before {
+    background     : black;
+    pointer-events : none;
+    opacity        : .5;
+}
+
+.s-intro__bg::after {
+    background     : linear-gradient(0deg, black 15%, rgba(0, 0, 0, 0) 100%);
+    pointer-events : none;
+    opacity        : .3;
+}
+
+.s-intro__content {
+    z-index        : 2;
+    align-items    : flex-end;
+    max-width      : 1000px;
+    height         : 70%;
+    color          : white;
+    padding-top    : var(--content-padding-top);
+    padding-bottom : var(--content-padding-bottom);
+    padding-left   : 2rem;
+    padding-right  : 2rem;
+    position       : relative;
+    box-sizing     : border-box;
+}
+ @media (max-width: 768px) {
+    .s-intro {
+        --content-padding-top    : 10vh;
+        --content-padding-bottom : 5rem;
+    }
+
+    .s-intro__content {
+        padding-top    : var(--content-padding-top);
+        padding-bottom : var(--content-padding-bottom);
+    }
+
+    .s-intro__content-title {
+        --text-title-size : 4.4rem; /* Reduce the title size on smaller screens */
+    }
+}
+
+
+
 
 .s-intro__content-bg::before {
     display        : block;
